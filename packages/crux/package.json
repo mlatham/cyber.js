@@ -1,0 +1,25 @@
+{
+  "name": "crux",
+  "version": "1.0.0",
+  "description": "Cross-platform UI bridge for mobile-embedded browser apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlatham/crux.git",
+    "directory": "packages/crux"
+  },
+  "bugs": {
+    "url": "https://github.com/mlatham/crux/issues"
+  },
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}

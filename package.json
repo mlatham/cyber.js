@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "workspaces": ["./packages/*"],
+  "keywords": [],
+  "author": "mlatham",
+  "scripts": {
+  }
+}
