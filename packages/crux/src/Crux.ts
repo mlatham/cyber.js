@@ -21,7 +21,7 @@ export class LoggingMiddleware implements Middleware {
     }
 }
 
-export default class Crux {
+export class Crux {
     public static nativeAdapter?: NativeAdapter;
     public static scriptAdapter?: ScriptAdapter;
 
