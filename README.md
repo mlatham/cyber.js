@@ -8,7 +8,16 @@ Minimal, steel-solid kit for bundling embeddable react web apps into mobile apps
 - Android Project + WebView
 1. Create tool which replicates example project, substituting certain values (app name, etc).
 
+### Names?
+- crux
+
 ### Notes
+Testing locally:
+- npx create-react-app my-app --template file:/Users/matt/Documents/workspace/crux/packages/cra-template-crux-app
+- npx create-next-app next-crux-starter --typescript --eslint --src-dir --app --use-npm 
+
+- npx create-next-app my-app --example github.com/mlatham/crux/next-template
+
 Custom integration:
 - npm install crux (<- add the Javascript bridge interface)
 - spm install crux-ios (<- add the iOS bridge interface)
