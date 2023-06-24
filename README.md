@@ -14,9 +14,8 @@ Minimal, steel-solid kit for bundling embeddable react web apps into mobile apps
 ### Notes
 Testing locally:
 - npx create-react-app my-app --template file:/Users/matt/Documents/workspace/crux/packages/cra-template-crux-app
-- npx create-next-app next-crux-starter --typescript --eslint --src-dir --app --use-npm 
-
-- npx create-next-app my-app --example github.com/mlatham/crux/next-template
+- npx create-next-app next-crux-starter --typescript --tailwind --eslint --src-dir --app --use-npm --import-alias "@/*"
+- npx create-next-app my-app --example https://github.com/mlatham/crux --example-path packages/next-crux-starter
 
 Custom integration:
 - npm install crux (<- add the Javascript bridge interface)
