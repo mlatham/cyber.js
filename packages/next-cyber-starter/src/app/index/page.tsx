@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from 'next/image'
 import { PageContext } from './context';
-import Crux, { LoggingMiddleware } from 'Crux';
+import Cyber, { LoggingMiddleware } from 'Cyber';
 
 export default function Home() {
     const {dispatch} = React.useContext(PageContext)
 
     React.useEffect(() => {
-        Crux.middlewares = [
+        Cyber.middlewares = [
             new LoggingMiddleware()
         ]
 
-        Crux.scriptAdapter = {
+        Cyber.scriptAdapter = {
             dispatchToScript: (name: string, payload: any) => {
                 // Forward the event to the context.
                 dispatch({ type: name, data: payload });
@@ -20,7 +20,7 @@ export default function Home() {
 
         // Cleanup.
         return () => {
-            Crux.scriptAdapter = undefined
+            Cyber.scriptAdapter = undefined
         };
     }, []);
 

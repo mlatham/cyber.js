@@ -10,10 +10,10 @@ var LoggingMiddleware = /** @class */ (function () {
     return LoggingMiddleware;
 }());
 export { LoggingMiddleware };
-var Crux = /** @class */ (function () {
-    function Crux() {
+var Cyber = /** @class */ (function () {
+    function Cyber() {
     }
-    Crux.dispatchToNative = function (name, data) {
+    Cyber.dispatchToNative = function (name, data) {
         this.middlewares.forEach(function (middleware) {
             middleware.dispatchToNative(name, data);
         });
@@ -21,7 +21,7 @@ var Crux = /** @class */ (function () {
             this.nativeAdapter.dispatchToNative(name, data);
         }
     };
-    Crux.dispatchToNativeAfterNextRepaint = function (name, data) {
+    Cyber.dispatchToNativeAfterNextRepaint = function (name, data) {
         // Avoid message being queued by call to requestAnimationFrame.
         if (document.hidden) {
             this.dispatchToNative(name, data);
@@ -33,7 +33,7 @@ var Crux = /** @class */ (function () {
             });
         }
     };
-    Crux.dispatchToScript = function (name, data) {
+    Cyber.dispatchToScript = function (name, data) {
         this.middlewares.forEach(function (middleware) {
             middleware.dispatchToScript(name, data);
         });
@@ -41,7 +41,7 @@ var Crux = /** @class */ (function () {
             this.scriptAdapter.dispatchToScript(name, data);
         }
     };
-    Crux.dispatchToScriptAfterNextRepaint = function (name, data) {
+    Cyber.dispatchToScriptAfterNextRepaint = function (name, data) {
         // Avoid message being queued by call to requestAnimationFrame.
         if (document.hidden) {
             this.dispatchToScript(name, data);
@@ -53,12 +53,12 @@ var Crux = /** @class */ (function () {
             });
         }
     };
-    Crux.middlewares = [];
-    return Crux;
+    Cyber.middlewares = [];
+    return Cyber;
 }());
-export default Crux;
-window.Crux = Crux;
-// Raise event to notify that Crux has loaded.
-var event = new Event("crux:load", { bubbles: true, cancelable: false });
+export default Cyber;
+window.Cyber = Cyber;
+// Raise event to notify that Cyber has loaded.
+var event = new Event("cyber:load", { bubbles: true, cancelable: false });
 document.dispatchEvent(event);
-//# sourceMappingURL=Crux.js.map
+//# sourceMappingURL=Cyber.js.map

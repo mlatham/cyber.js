@@ -27,7 +27,7 @@ export declare class LoggingMiddleware implements Middleware {
         [key: string]: any;
     }): void;
 }
-export default class Crux {
+export default class Cyber {
     static nativeAdapter?: NativeAdapter;
     static scriptAdapter?: ScriptAdapter;
     static middlewares: Middleware[];
@@ -46,6 +46,6 @@ export default class Crux {
 }
 declare global {
     interface Window {
-        Crux: typeof Crux;
+        Cyber: typeof Cyber;
     }
 }

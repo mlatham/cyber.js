@@ -1,33 +1,35 @@
-# OMNI
-Minimal, steel-solid kit for bundling embeddable react web apps into mobile apps for iOS and Android.
+# Cyber.js
+Bundle next.js into your native mobile apps.
+
+### Getting Started
+TODO:
+
+### Documentation
+TODO:
 
 ### Roadmap
-1. Create performance log of load times.
 1. Create example project.
 - iOS Project + WKWebView
 - Android Project + WebView
 1. Create tool which replicates example project, substituting certain values (app name, etc).
 
-### Names?
-- crux
-
 ### Notes
 Testing locally:
-- npx create-react-app my-app --template file:/Users/matt/Documents/workspace/crux/packages/cra-template-crux-app
-- npx create-next-app next-crux-starter --typescript --tailwind --eslint --src-dir --app --use-npm --import-alias "@/*"
-- npx create-next-app my-app --example https://github.com/mlatham/crux --example-path packages/next-crux-starter
+- npx create-react-app my-app --template file:/Users/matt/Documents/workspace/cyber/packages/cra-template-cyber-app
+- npx create-next-app next-cyber-starter --typescript --tailwind --eslint --src-dir --app --use-npm --import-alias "@/*"
+- npx create-next-app my-app --example https://github.com/mlatham/cyber --example-path packages/next-cyber-starter
 
 Custom integration:
-- npm install crux (<- add the Javascript bridge interface)
-- spm install crux-ios (<- add the iOS bridge interface)
-    - Adds custom build step to copy crux-ios.js as a resource
-- gradle install crux-android (<- add the android bridge interface)
-    - Adds custom build step to copy in crux-android.js as a resource
+- npm install cyber (<- add the Javascript bridge interface)
+- spm install cyber-ios (<- add the iOS bridge interface)
+    - Adds custom build step to copy cyber-ios.js as a resource
+- gradle install cyber-android (<- add the android bridge interface)
+    - Adds custom build step to copy in cyber-android.js as a resource
 
-- npx create-react-app my-app --template crux-react-app
+- npx create-react-app my-app --template cyber-react-app
     - esbuild 
-- npx create-react-app my-app --template crux-mobile-app
-    - crux-react-app + ios 
+- npx create-react-app my-app --template cyber-mobile-app
+    - cyber-react-app + ios 
 
 - https://createapp.dev/webpack
 - main library

@@ -1,14 +1,14 @@
 {
-  "name": "crux",
+  "name": "cyber-js",
   "version": "1.0.0",
-  "description": "Cross-platform UI bridge for mobile-embedded browser apps.",
+  "description": "Cross-platform UI bridge for mobile-embedded next.js apps.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mlatham/crux.git",
-    "directory": "packages/crux"
+    "url": "https://github.com/mlatham/cyber.js.git",
+    "directory": "packages/cyber"
   },
   "bugs": {
-    "url": "https://github.com/mlatham/crux/issues"
+    "url": "https://github.com/mlatham/cyber.js/issues"
   },
   "license": "MIT",
   "main": "./lib/index.js",

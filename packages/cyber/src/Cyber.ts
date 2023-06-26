@@ -21,7 +21,7 @@ export class LoggingMiddleware implements Middleware {
     }
 }
 
-export class Crux {
+export class Cyber {
     public static nativeAdapter?: NativeAdapter;
     public static scriptAdapter?: ScriptAdapter;
 
@@ -74,12 +74,12 @@ export class Crux {
 
 declare global {
     interface Window {
-        Crux: typeof Crux
+        Cyber: typeof Cyber
     }
 }
 
-(window as any).Crux = Crux
+(window as any).Cyber = Cyber
 
-// Raise event to notify that Crux has loaded.
-const event = new Event("crux:load", { bubbles: true, cancelable: false })
+// Raise event to notify that Cyber has loaded.
+const event = new Event("cyber:load", { bubbles: true, cancelable: false })
 document.dispatchEvent(event)

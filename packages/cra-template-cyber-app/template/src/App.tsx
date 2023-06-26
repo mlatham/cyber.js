@@ -1,18 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import { AppContext } from './store';
-import Crux, {LoggingMiddleware} from './Crux';
+import Cyber, {LoggingMiddleware} from './Cyber';
 import './App.css';
 
 function App() {
   const {state, dispatch} = React.useContext(AppContext)
 
   React.useEffect(() => {
-    Crux.middlewares = [
+    Cyber.middlewares = [
       new LoggingMiddleware()
     ]
 
-    Crux.scriptAdapter = {
+    Cyber.scriptAdapter = {
         dispatchToScript: (name: string, payload: any) => {
             console.log("dispatchToScript", name, payload)
 
@@ -23,20 +23,20 @@ function App() {
 
     // Cleanup.
     return () => {
-      Crux.scriptAdapter = undefined
+      Cyber.scriptAdapter = undefined
     };
   }, []);
 
   const incrementValueA = () => {
-    Crux.dispatchToScript("INCREMENT_VALUE_A");
+    Cyber.dispatchToScript("INCREMENT_VALUE_A");
   }
 
   const resetValueA = () => {
-    Crux.dispatchToScript("SET_VALUE_A", { value: 0 })
+    Cyber.dispatchToScript("SET_VALUE_A", { value: 0 })
   }
 
   const sayHello = () => {
-    Crux.dispatchToNative("navigate", { destination: "test" })
+    Cyber.dispatchToNative("navigate", { destination: "test" })
   }
   
   return (

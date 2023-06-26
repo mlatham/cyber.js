@@ -214,13 +214,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 400px; height: 1px; padding-top: 209px; margin-left: 916px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left; max-height: 26px; overflow: hidden;">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                // webkit.messageHandlers.crux.postMessage({name: name, data: data})
+                                // webkit.messageHandlers.cyber.postMessage({name: name, data: data})
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="916" y="213" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
-                    // webkit.messageHandlers.crux.postMessage({name: name, data: data})
+                    // webkit.messageHandlers.cyber.postMessage({name: name, data: data})
                 </text>
             </switch>
         </g>
@@ -230,13 +230,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 400px; height: 1px; padding-top: 239px; margin-left: 916px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left; max-height: 26px; overflow: hidden;">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                // window.CruxNative = new CruxNative()
+                                // window.CyberNative = new CyberNative()
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="916" y="243" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
-                    // window.CruxNative = new CruxNative()
+                    // window.CyberNative = new CyberNative()
                 </text>
             </switch>
         </g>
@@ -862,13 +862,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 500px; height: 1px; padding-top: 849px; margin-left: 46px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left; max-height: 26px; overflow: hidden;">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                handlerName: String = "crux"
+                                handlerName: String = "cyber"
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="46" y="853" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
-                    handlerName: String = "crux"
+                    handlerName: String = "cyber"
                 </text>
             </switch>
         </g>
@@ -878,13 +878,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 500px; height: 1px; padding-top: 879px; margin-left: 46px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left; max-height: 26px; overflow: hidden;">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                scriptUrl: String = "crux-native"
+                                scriptUrl: String = "cyber-native"
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="46" y="883" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
-                    scriptUrl: String = "crux-native"
+                    scriptUrl: String = "cyber-native"
                 </text>
             </switch>
         </g>
@@ -1053,13 +1053,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 408px; height: 1px; padding-top: 119px; margin-left: 1441px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                Crux
+                                Cyber
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="1645" y="123" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Crux
+                    Cyber
                 </text>
             </switch>
         </g>
@@ -1510,13 +1510,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 318px; height: 1px; padding-top: 19px; margin-left: 1441px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
                             <div style="display: inline-block; font-size: 32px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
-                                Crux (JS)
+                                Cyber (JS)
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="1600" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="32px" text-anchor="middle">
-                    Crux (JS)
+                    Cyber (JS)
                 </text>
             </switch>
         </g>

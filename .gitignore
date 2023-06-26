@@ -14,7 +14,7 @@
 
 # production
 /build
-/crux/lib
+/cyber/lib
 
 # misc
 .DS_Store

@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This Crux project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Cyber project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
