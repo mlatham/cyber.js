@@ -2,7 +2,7 @@
 Bundle next.js into your native mobile apps.
 
 ### Getting Started
-TODO:
+`npx create-next-app my-app --example https://github.com/mlatham/cyber --example-path packages/next-cyber-starter`
 
 ### Documentation
 TODO:
@@ -17,6 +17,7 @@ TODO:
 Testing locally:
 - npx create-react-app my-app --template file:/Users/matt/Documents/workspace/cyber/packages/cra-template-cyber-app
 - npx create-next-app next-cyber-starter --typescript --tailwind --eslint --src-dir --app --use-npm --import-alias "@/*"
+
 - npx create-next-app my-app --example https://github.com/mlatham/cyber --example-path packages/next-cyber-starter
 
 Custom integration:
