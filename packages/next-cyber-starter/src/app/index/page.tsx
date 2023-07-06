@@ -7,21 +7,21 @@ export default function Home() {
     const {dispatch} = React.useContext(PageContext)
 
     React.useEffect(() => {
-        Cyber.middlewares = [
-            new LoggingMiddleware()
-        ]
+      Cyber.middlewares = [
+        new LoggingMiddleware()
+      ]
 
-        Cyber.scriptAdapter = {
-            dispatchToScript: (name: string, payload: any) => {
-                // Forward the event to the context.
-                dispatch({ type: name, data: payload });
-            }
+      Cyber.scriptAdapter = {
+        dispatchToScript: (name: string, payload: any) => {
+          // Forward the event to the context.
+          dispatch({ type: name, data: payload });
         }
+      }
 
-        // Cleanup.
-        return () => {
-            Cyber.scriptAdapter = undefined
-        };
+      // Cleanup.
+      return () => {
+        Cyber.scriptAdapter = undefined
+      };
     }, []);
 
   return (
