@@ -1,7 +1,11 @@
 name: Publish to npmjs.com
+# on:
+#   release:
+#     types: [created]
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -14,6 +18,11 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - uses: JS-DevTools/npm-publish@541aa6b21b4a1e9990c95a92c21adc16b35e9551
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+      - name: Publish package on NPM
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - uses: JS-DevTools/npm-publish@541aa6b21b4a1e9990c95a92c21adc16b35e9551
+      #   with:
+      #     token: ${{ secrets.NPM_TOKEN }}
