@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: 18
       - run: npm ci
-      - uses: JS-DevTools/npm-publish@v2
+      - uses: JS-DevTools/npm-publish@541aa6b21b4a1e9990c95a92c21adc16b35e9551
         with:
           token: ${{ secrets.NPM_TOKEN }}
