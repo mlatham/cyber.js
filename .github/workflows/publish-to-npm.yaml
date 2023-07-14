@@ -19,7 +19,7 @@ jobs:
           node-version: 18
       - run: npm ci
       - name: Publish package on NPM
-        run: npm publish
+        run: npm publish --workspaces --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
