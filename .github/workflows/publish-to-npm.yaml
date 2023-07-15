@@ -18,17 +18,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          registry-url: https://registry.npmjs.org/
       - run: npm ci
       - name: Publish 'cyber' package on NPM
-        run: npm publish --workspace=packages/cyber --provenance --access public
+        run: npm publish --workspaces --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npm ci
-      - name: Publish 'next-cyber-starter' package on NPM
-        run: npm publish --workspace=packages/next-cyber-starter --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      # - uses: JS-DevTools/npm-publish@541aa6b21b4a1e9990c95a92c21adc16b35e9551
-      #   with:
-      #     token: ${{ secrets.NPM_TOKEN }} 
