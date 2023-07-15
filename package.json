@@ -7,8 +7,5 @@
   "scripts": {
   },
   "devDependencies": {
-  },
-  "publishConfig": {
-    "@mlatham:registry": "https://registry.npmjs.org"
   }
 }
