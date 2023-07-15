@@ -31,4 +31,4 @@ jobs:
 
       # - uses: JS-DevTools/npm-publish@541aa6b21b4a1e9990c95a92c21adc16b35e9551
       #   with:
-      #     token: ${{ secrets.NPM_TOKEN }}
+      #     token: ${{ secrets.NPM_TOKEN }} 
