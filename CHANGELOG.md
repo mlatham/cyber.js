@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.1](https://github.com/mlatham/cyber.js/compare/v0.3.0...v0.3.1) (2023-07-16)
+
+
+### Bug Fixes
+
+* Add back permissions. ([fbaf538](https://github.com/mlatham/cyber.js/commit/fbaf538e627d92aeb1cb345d23c8efa20451908e))
+* Combine github-actions. ([7a851b4](https://github.com/mlatham/cyber.js/commit/7a851b4727388b0b4071950e2b02a5859486bba6))
+* Testing. ([0474d55](https://github.com/mlatham/cyber.js/commit/0474d550966d2b1521cfc8964e72f9e7e06ffaf2))
+* Try again? ([5b8d7fb](https://github.com/mlatham/cyber.js/commit/5b8d7fbd4e68be22bc20d78fdac2de49692ec4fd))
+
 ## [0.3.0](https://github.com/mlatham/cyber.js/compare/v0.2.0...v0.3.0) (2023-07-16)
 
 
