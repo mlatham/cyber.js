@@ -53,7 +53,7 @@ export class Cyber {
         this.middlewares.forEach(middleware => {
             middleware.dispatchToScript(name, data);
         });
-        
+
         if (this.scriptAdapter) {
             this.scriptAdapter.dispatchToScript(name, data);
         }
