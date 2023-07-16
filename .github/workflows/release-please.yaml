@@ -27,7 +27,8 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm publish --workspaces --provenance --access public
+      - run: npm publish --workspaces --access public
+        # TODO: --provenance doesn't seem to work in this context.
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
