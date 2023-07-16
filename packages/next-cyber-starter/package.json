@@ -1,6 +1,6 @@
 {
   "name": "@mlatham/next-cyber-starter",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

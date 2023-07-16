@@ -1,6 +1,6 @@
 {
   "name": "@mlatham/cyber",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Cross-platform UI bridge for mobile-embedded next.js apps.",
   "keywords": [
     "cyber",
