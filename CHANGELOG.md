@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/mlatham/cyber.js/compare/v0.3.3...v0.3.4) (2023-07-16)
+
+
+### Bug Fixes
+
+* Rename action. Fix auto-versioning of npm packages. ([29d9215](https://github.com/mlatham/cyber.js/commit/29d92157cada7b60e435c7dda744b6d9a6595382))
+
 ## [0.3.3](https://github.com/mlatham/cyber.js/compare/v0.3.2...v0.3.3) (2023-07-16)
 
 
