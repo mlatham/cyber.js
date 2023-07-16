@@ -7,6 +7,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlatham/cyber.js.git",
+    "directory": "packages/next-cyber-starter"
+  },
   "dependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.14",
