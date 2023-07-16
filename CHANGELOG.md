@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/mlatham/cyber.js/compare/v0.3.0...v0.3.1) (2023-07-16)
+
+
+### Bug Fixes
+
+* Testing. ([0474d55](https://github.com/mlatham/cyber.js/commit/0474d550966d2b1521cfc8964e72f9e7e06ffaf2))
+
 ## [0.3.0](https://github.com/mlatham/cyber.js/compare/v0.2.0...v0.3.0) (2023-07-16)
 
 
