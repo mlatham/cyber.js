@@ -27,7 +27,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm version --workspaces v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
+      - run: npm version --workspaces ${{ steps.release.outputs.tag_name }}
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --workspaces --access public
         # TODO: --provenance doesn't seem to work in this context.
