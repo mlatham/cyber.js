@@ -4,8 +4,7 @@
     "./packages/*"
   ],
   "keywords": [],
-  "scripts": {
-  },
-  "devDependencies": {
-  }
+  "scripts": {},
+  "devDependencies": {},
+  "version": "0.2.0"
 }
