@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.3](https://github.com/mlatham/cyber.js/compare/v0.3.2...v0.3.3) (2023-07-16)
+
+
+### Bug Fixes
+
+* Auto-version bump. ([8cc8639](https://github.com/mlatham/cyber.js/commit/8cc863989e3b8a5fe70b7b18d778f037c691c485))
+* Auto-version workspaces. ([792e6a7](https://github.com/mlatham/cyber.js/commit/792e6a71ff0f3c1b0526859f7b86049caf12bce6))
+* Tweak. ([a36ac39](https://github.com/mlatham/cyber.js/commit/a36ac39a267a6a2fa3df58d561429e507dd70d99))
+
 ## [0.3.2](https://github.com/mlatham/cyber.js/compare/v0.3.1...v0.3.2) (2023-07-16)
 
 
