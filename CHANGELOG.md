@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/mlatham/cyber.js/compare/v0.3.4...v0.3.5) (2023-07-16)
+
+
+### Bug Fixes
+
+* Use release-please tag_name output as NPM version. ([a63d8c1](https://github.com/mlatham/cyber.js/commit/a63d8c11e3b2cb76f02326a11b040649909f13e1))
+
 ## [0.3.4](https://github.com/mlatham/cyber.js/compare/v0.3.3...v0.3.4) (2023-07-16)
 
 
