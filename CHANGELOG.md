@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/mlatham/cyber.js/compare/v0.2.0...v0.3.0) (2023-07-16)
+
+
+### Features
+
+* Tweak publish action. ([86e13d2](https://github.com/mlatham/cyber.js/commit/86e13d22361f25d0ca4c8cd1202be636c18cd7d8))
+
 ## [0.2.0](https://github.com/mlatham/cyber.js/compare/v0.1.8...v0.2.0) (2023-07-16)
 
 
