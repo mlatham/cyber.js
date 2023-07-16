@@ -7,11 +7,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mlatham/cyber.js.git",
-    "directory": "packages/next-cyber-starter"
-  },
   "dependencies": {
     "@types/node": "20.3.1",
     "@types/react": "18.2.14",
@@ -25,7 +20,7 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3",
-    "@mlatham/cyber": "0.1.0"
+    "@mlatham/cyber": "^0.1.0"
   },
   "description": "This is a [Cyber.js](https://cyber.js/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "devDependencies": {}
