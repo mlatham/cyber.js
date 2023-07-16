@@ -25,9 +25,9 @@ jobs:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm version --workspace=packages/cyber ${{ github.event.release.tag_name }}
-      - run: npm version --workspace=packages/next-cyber-starter ${{ github.event.release.tag_name }}
       - run: npm ci
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm version --workspaces ${{ github.event.release.tag_name }}
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --workspaces --access public
         # TODO: --provenance doesn't seem to work in this context.
