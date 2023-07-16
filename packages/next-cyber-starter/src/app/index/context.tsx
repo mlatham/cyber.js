@@ -10,7 +10,7 @@ type InitialStateType = {
     valueB: number
 }
 
-const initialState = {
+const initialState: InitialStateType = {
     valueA: 0,
     valueB: 0
 };
@@ -23,8 +23,8 @@ const PageContext = createContext<{
     dispatch: () => null
 });
 
-// Combine multiple reducers, allowing state to be sliced.
-const mainReducer = (
+// Combine multiple reducers, allowing state to be sliced within a page.
+const pageReducer = (
     { valueA, valueB }: { valueA: number, valueB: number},
     action: any
 ) => ({
@@ -59,7 +59,7 @@ export const valueBReducer = (state: number, action: Action) => {
 }
 
 const PageProvider = ({ children }: { children: any }) => {
-    const [state, dispatch] = useReducer(mainReducer, initialState)
+    const [state, dispatch] = useReducer(pageReducer, initialState)
   
     return (
       <PageContext.Provider value={{state, dispatch}}>

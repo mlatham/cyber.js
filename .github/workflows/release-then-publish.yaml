@@ -5,7 +5,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-name: release-please
+name: release-then-publish
 jobs:
   release-please:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
-      - run: npm version --workspaces ${{ github.event.release.tag_name }}
+      - run: npm version --workspaces v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
         if: ${{ steps.release.outputs.release_created }}
       - run: npm publish --workspaces --access public
         # TODO: --provenance doesn't seem to work in this context.
