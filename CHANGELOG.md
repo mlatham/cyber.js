@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/mlatham/cyber.js/compare/v0.3.1...v0.3.2) (2023-07-16)
+
+
+### Bug Fixes
+
+* remove provenance for now. ([8926e52](https://github.com/mlatham/cyber.js/commit/8926e52f4035c4eac76c64c2e2b85e05228a525d))
+
 ## [0.3.1](https://github.com/mlatham/cyber.js/compare/v0.3.0...v0.3.1) (2023-07-16)
 
 
