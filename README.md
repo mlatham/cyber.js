@@ -2,7 +2,7 @@
 Bundle next.js into your native mobile apps.
 
 ### Getting Started
-`npx create-next-app my-app --example https://github.com/mlatham/cyber --example-path packages/next-cyber-starter`
+`npx create-next-app my-app --example https://github.com/mlatham/cyber.js --example-path packages/next-cyber-starter`
 
 ### Documentation
 TODO:
