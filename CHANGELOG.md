@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.3](https://github.com/mlatham/cyber.js/compare/v0.4.2...v0.4.3) (2023-07-31)
+
+
+### Bug Fixes
+
+* Handle window being undefined. ([437677e](https://github.com/mlatham/cyber.js/commit/437677e484ed8d75bf08b74496b837e03f3c188f))
+
 ## [0.4.2](https://github.com/mlatham/cyber.js/compare/v0.4.1...v0.4.2) (2023-07-31)
 
 
