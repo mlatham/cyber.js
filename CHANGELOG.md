@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/mlatham/cyber.js/compare/v0.4.0...v0.4.1) (2023-07-31)
+
+
+### Bug Fixes
+
+* Build files with tsc. ([8915adc](https://github.com/mlatham/cyber.js/commit/8915adc99f3e7ffe72fb93a5e24d469edad68c0d))
+
 ## [0.4.0](https://github.com/mlatham/cyber.js/compare/v0.3.5...v0.4.0) (2023-07-16)
 
 
