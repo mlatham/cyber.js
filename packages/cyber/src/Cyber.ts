@@ -78,7 +78,7 @@ declare global {
     }
 }
 
-if (window) {
+if (typeof window !== "undefined") {
     (window as any).Cyber = Cyber
 
     // Raise event to notify that Cyber has loaded.
