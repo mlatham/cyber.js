@@ -78,8 +78,10 @@ declare global {
     }
 }
 
-(window as any).Cyber = Cyber
+if (window) {
+    (window as any).Cyber = Cyber
 
-// Raise event to notify that Cyber has loaded.
-const event = new Event("cyber:load", { bubbles: true, cancelable: false })
-document.dispatchEvent(event)
+    // Raise event to notify that Cyber has loaded.
+    const event = new Event("cyber:load", { bubbles: true, cancelable: false })
+    document.dispatchEvent(event)
+}
