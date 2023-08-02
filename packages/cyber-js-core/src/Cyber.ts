@@ -1,28 +1,28 @@
-export type Action = {
+export type Message = {
     type: string,
     data?: { [key: string] : any }
 }
 
 export interface NativeAdapter {
-    dispatchToNative(action: Action): void
-    dispatchToScript(action: Action): void
+    dispatchToNative(message: Message): void
+    dispatchToScript(message: Message): void
 }
 
 export interface ScriptAdapter {
-    dispatchToScript(action: Action): void
+    dispatchToScript(message: Message): void
 }
 
 export interface Middleware {
-    dispatchToNative(action: Action): void
-    dispatchToScript(action: Action): void
+    dispatchToNative(message: Message): void
+    dispatchToScript(message: Message): void
 }
 
 export class LoggingMiddleware implements Middleware {
-    dispatchToNative(action: Action) {
-        console.log("[Script → Native]", action.type, action.data)
+    dispatchToNative(message: Message) {
+        console.log("[Script → Native]", message.type, message.data)
     }
-    dispatchToScript(action: Action) {
-        console.log("[Native → Script]", action.type, action.data)
+    dispatchToScript(message: Message) {
+        console.log("[Native → Script]", message.type, message.data)
     }
 }
 
@@ -32,44 +32,44 @@ export class Cyber {
 
     public static middlewares: Middleware[] = []
 
-    public static dispatchToNative(action: Action) {
+    public static dispatchToNative(message: Message) {
         this.middlewares.forEach(middleware => {
-            middleware.dispatchToNative(action)
+            middleware.dispatchToNative(message)
         });
 
         if (this.nativeAdapter) {
-            this.nativeAdapter.dispatchToNative(action)
+            this.nativeAdapter.dispatchToNative(message)
         }
     }
 
-    public static dispatchToNativeAfterNextRepaint(action: Action) {
+    public static dispatchToNativeAfterNextRepaint(message: Message) {
 		// Avoid message being queued by call to requestAnimationFrame.
 		if (document.hidden) {
-			this.dispatchToNative(action)
+			this.dispatchToNative(message)
 		} else {
-			var postMessage = this.dispatchToNative.bind(this, action)
+			var postMessage = this.dispatchToNative.bind(this, message)
 			requestAnimationFrame(() => {
 				requestAnimationFrame(postMessage)
 			})
 		}
 	}
 
-    public static dispatchToScript(action: Action) { 
+    public static dispatchToScript(message: Message) { 
         this.middlewares.forEach(middleware => {
-            middleware.dispatchToScript(action)
+            middleware.dispatchToScript(message)
         });
 
         if (this.scriptAdapter) {
-            this.scriptAdapter.dispatchToScript(action)
+            this.scriptAdapter.dispatchToScript(message)
         }
     }
 
-    public static dispatchToScriptAfterNextRepaint(action: Action) {
+    public static dispatchToScriptAfterNextRepaint(message: Message) {
 		// Avoid message being queued by call to requestAnimationFrame.
 		if (document.hidden) {
-			this.dispatchToScript(action)
+			this.dispatchToScript(message)
 		} else {
-			var postMessage = this.dispatchToScript.bind(this, action)
+			var postMessage = this.dispatchToScript.bind(this, message)
 			requestAnimationFrame(() => {
 				requestAnimationFrame(postMessage)
 			})
