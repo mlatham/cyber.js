@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.5](https://github.com/mlatham/cyber.js/compare/v0.4.4...v0.4.5) (2023-08-02)
+
+
+### Bug Fixes
+
+* Remove org naming from package. ([73c34c2](https://github.com/mlatham/cyber.js/commit/73c34c2092f3f6201ab6e87f03e2ac350aae0f24))
+
 ## [0.4.4](https://github.com/mlatham/cyber.js/compare/v0.4.3...v0.4.4) (2023-08-02)
 
 
