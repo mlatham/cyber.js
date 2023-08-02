@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/mlatham/cyber.js/compare/v0.4.3...v0.4.4) (2023-08-02)
+
+
+### Bug Fixes
+
+* Bump dependency version. ([e4ceab5](https://github.com/mlatham/cyber.js/commit/e4ceab5ff3167a0544c1fb2a2ddd5b1bda5c032a))
+* Wrap up an action type. ([56a7432](https://github.com/mlatham/cyber.js/commit/56a74320e033a489d22c012841475fdee495dbcc))
+
 ## [0.4.3](https://github.com/mlatham/cyber.js/compare/v0.4.2...v0.4.3) (2023-07-31)
 
 
