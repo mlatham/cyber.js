@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.6](https://github.com/mlatham/cyber.js/compare/v0.4.5...v0.4.6) (2023-08-02)
+
+
+### Bug Fixes
+
+* Tweak naming further. ([244a6c2](https://github.com/mlatham/cyber.js/commit/244a6c279feff51bffef037768caa5b4ae72c464))
+
 ## [0.4.5](https://github.com/mlatham/cyber.js/compare/v0.4.4...v0.4.5) (2023-08-02)
 
 
