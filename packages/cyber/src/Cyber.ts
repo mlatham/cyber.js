@@ -1,70 +1,75 @@
+export type Action = {
+    type: string,
+    data?: { [key: string] : any }
+}
+
 export interface NativeAdapter {
-    dispatchToNative(name: string, data?: { [key: string] : any }): void;
-    dispatchToScript(name: string, data?: { [key: string] : any }): void;
+    dispatchToNative(action: Action): void
+    dispatchToScript(action: Action): void
 }
 
 export interface ScriptAdapter {
-    dispatchToScript(name: string, data?: { [key: string] : any }): void;
+    dispatchToScript(action: Action): void
 }
 
 export interface Middleware {
-    dispatchToNative(name: string, data?: { [key: string] : any }): void;
-    dispatchToScript(name: string, data?: { [key: string] : any }): void;
+    dispatchToNative(action: Action): void
+    dispatchToScript(action: Action): void
 }
 
 export class LoggingMiddleware implements Middleware {
-    dispatchToNative(name: string, data?: { [key: string] : any }) {
-        console.log("[Script → Native]", name, data);
+    dispatchToNative(action: Action) {
+        console.log("[Script → Native]", action.type, action.data)
     }
-    dispatchToScript(name: string, data?: { [key: string] : any }) {
-        console.log("[Native → Script]", name, data);
+    dispatchToScript(action: Action) {
+        console.log("[Native → Script]", action.type, action.data)
     }
 }
 
 export class Cyber {
-    public static nativeAdapter?: NativeAdapter;
-    public static scriptAdapter?: ScriptAdapter;
+    public static nativeAdapter?: NativeAdapter
+    public static scriptAdapter?: ScriptAdapter
 
-    public static middlewares: Middleware[] = [];
+    public static middlewares: Middleware[] = []
 
-    public static dispatchToNative(name: string, data?: { [key: string] : any }) {
+    public static dispatchToNative(action: Action) {
         this.middlewares.forEach(middleware => {
-            middleware.dispatchToNative(name, data);
+            middleware.dispatchToNative(action)
         });
 
         if (this.nativeAdapter) {
-            this.nativeAdapter.dispatchToNative(name, data);
+            this.nativeAdapter.dispatchToNative(action)
         }
     }
 
-    public static dispatchToNativeAfterNextRepaint(name: string, data?: { [key: string] : any }) {
+    public static dispatchToNativeAfterNextRepaint(action: Action) {
 		// Avoid message being queued by call to requestAnimationFrame.
 		if (document.hidden) {
-			this.dispatchToNative(name, data);
+			this.dispatchToNative(action)
 		} else {
-			var postMessage = this.dispatchToNative.bind(this, name, data)
+			var postMessage = this.dispatchToNative.bind(this, action)
 			requestAnimationFrame(() => {
 				requestAnimationFrame(postMessage)
 			})
 		}
 	}
 
-    public static dispatchToScript(name: string, data?: { [key: string] : any }) { 
+    public static dispatchToScript(action: Action) { 
         this.middlewares.forEach(middleware => {
-            middleware.dispatchToScript(name, data);
+            middleware.dispatchToScript(action)
         });
 
         if (this.scriptAdapter) {
-            this.scriptAdapter.dispatchToScript(name, data);
+            this.scriptAdapter.dispatchToScript(action)
         }
     }
 
-    public static dispatchToScriptAfterNextRepaint(name: string, data?: { [key: string] : any }) {
+    public static dispatchToScriptAfterNextRepaint(action: Action) {
 		// Avoid message being queued by call to requestAnimationFrame.
 		if (document.hidden) {
-			this.dispatchToScript(name, data);
+			this.dispatchToScript(action)
 		} else {
-			var postMessage = this.dispatchToScript.bind(this, name, data)
+			var postMessage = this.dispatchToScript.bind(this, action)
 			requestAnimationFrame(() => {
 				requestAnimationFrame(postMessage)
 			})
@@ -78,6 +83,7 @@ declare global {
     }
 }
 
+// Check for window to support server-side rendering.
 if (typeof window !== "undefined") {
     (window as any).Cyber = Cyber
 
