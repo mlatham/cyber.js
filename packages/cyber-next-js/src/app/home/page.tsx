@@ -1,5 +1,5 @@
 import React from 'react'
-import Cyber, { Action, LoggingMiddleware } from 'Cyber'
+import Cyber, { Action, LoggingMiddleware } from 'cyber-core'
 
 export default function Page() {
   React.useEffect(() => {

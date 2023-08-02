@@ -25,16 +25,16 @@ jobs:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
-      - working-directory: ./packages/cyber
+      - working-directory: ./packages/cyber-core
         run: npm ci
         if: ${{ steps.release.outputs.release_created }}
-      - working-directory: ./packages/cyber
+      - working-directory: ./packages/cyber-core
         run: npm run build
         if: ${{ steps.release.outputs.release_created }}
-      - working-directory: ./packages/cyber
+      - working-directory: ./packages/cyber-core
         run: npm version ${{ steps.release.outputs.tag_name }}
         if: ${{ steps.release.outputs.release_created }}
-      - working-directory: ./packages/cyber
+      - working-directory: ./packages/cyber-core
         run: npm publish --access public
         # TODO: --provenance doesn't seem to work in this context.
         env:

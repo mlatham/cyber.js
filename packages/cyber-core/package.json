@@ -1,7 +1,7 @@
 {
-  "name": "@mlatham/cyber",
+  "name": "cyber-core",
   "version": "0.0.1",
-  "description": "Cross-platform UI bridge for mobile-embedded next.js apps.",
+  "description": "The next.js framework for cross-platform mobile apps.",
   "keywords": [
     "cyber",
     "next-js",
