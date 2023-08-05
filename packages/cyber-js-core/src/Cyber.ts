@@ -1,5 +1,5 @@
 export type Message = {
-    type: string,
+    name: string,
     data?: { [key: string] : any }
 }
 
@@ -19,10 +19,10 @@ export interface Middleware {
 
 export class LoggingMiddleware implements Middleware {
     dispatchToNative(message: Message) {
-        console.log("[Script → Native]", message.type, message.data)
+        console.log("[Script → Native]", message.name, message.data)
     }
     dispatchToScript(message: Message) {
-        console.log("[Native → Script]", message.type, message.data)
+        console.log("[Native → Script]", message.name, message.data)
     }
 }
 

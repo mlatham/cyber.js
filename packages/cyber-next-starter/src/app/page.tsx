@@ -31,7 +31,7 @@ export default function Page() {
         <p>From native: {this.state.value}</p>
         <Button
           onClick={() => {
-            Cyber.dispatchToNative({ type: 'hello-from-script' })
+            Cyber.dispatchToNative({ name: 'hello-from-script' })
           }}>
           Dispatch to Native
         </Button>
