@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.7](https://github.com/mlatham/cyber.js/compare/v0.4.6...v0.4.7) (2023-08-05)
+
+
+### Bug Fixes
+
+* Tweak message naming. ([162e23d](https://github.com/mlatham/cyber.js/commit/162e23d1e8687de94c17eaedd91f26e70507f965))
+
 ## [0.4.6](https://github.com/mlatham/cyber.js/compare/v0.4.5...v0.4.6) (2023-08-02)
 
 
